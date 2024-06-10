@@ -33,6 +33,9 @@ class TaskManager:
         """
         pass
 
+    def dump_tasks(self):
+        print("All the tasks dumped successfully.")
+
 def main():
     task_manager = TaskManager()
 
@@ -41,6 +44,7 @@ def main():
         print("1. Add Task")
         print("2. View Tasks")
         print("3. Mark Task as Completed")
+        print("4 Dump Tasks")
         print("4. Exit")
 
         choice = input("Enter your choice: ")
@@ -57,6 +61,9 @@ def main():
         elif choice == "4":
             print("Exiting program.")
             break
+        elif choice == "5": 
+            print("Dump Tasks method invoked.")
+            task_manager.dump_tasks()
         else:
             print("Invalid choice. Please try again.")
 
