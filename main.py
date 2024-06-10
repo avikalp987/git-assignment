@@ -44,8 +44,8 @@ def main():
         print("1. Add Task")
         print("2. View Tasks")
         print("3. Mark Task as Completed")
-        print("4 Dump Tasks")
-        print("4. Exit")
+        print("4. Dump Tasks")
+        print("5. Exit")
 
         choice = input("Enter your choice: ")
 
@@ -58,12 +58,12 @@ def main():
         elif choice == "3":
             task_index = int(input("Enter task index to mark as completed: "))
             task_manager.mark_task_completed(task_index)
-        elif choice == "4":
-            print("Exiting program.")
-            break
-        elif choice == "5": 
+        elif choice == "4": 
             print("Dump Tasks method invoked.")
             task_manager.dump_tasks()
+        elif choice == "5":
+            print("Exiting program.")
+            break
         else:
             print("Invalid choice. Please try again.")
 
